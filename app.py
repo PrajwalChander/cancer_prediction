@@ -1,7 +1,7 @@
 import numpy as np
 import pickle
 import streamlit as st
-loaded_model=pickle.load(open('C:/Users/PRAJWAL CHANDEER/Dropbox/PC/Desktop/ML to API/python/breast_cancer_classification.sav','rb'))
+loaded_model=pickle.load(open('breast_cancer_classification.sav','rb'))
 def cancer_prediction(input1):
     input_to_array = np.asarray(input1)
     reshaped = input_to_array.reshape(1, -1)
